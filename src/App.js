@@ -2,87 +2,72 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
 
-          <html>
+      <p>
 
-            <head>
-              <meta charset="utf-8" />
-              <title>Route Management</title>
-              <meta name="viewport" content="width=device-width, initial-scale=1" />
-              <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <html>
 
-              <link href="css/bootstrap-3.3.5.min.css" type="text/css" rel="stylesheet" />
-              <link rel="stylesheet" type="text/css" href="css/datatables-1.10.13-custom.min.css" />
+          <head>
+            <meta charset="utf-8" />
+            <title>Route Management</title>
 
-              <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
-              <script src="js/moment.min.js" type="text/javascript"></script>
-              <script src="js/bootstrap-3.3.5.min.js" type="text/javascript"></script>
-              <script src="js/datatables-1.10.13-custom.min.js" type="text/javascript"></script>
 
-              <style>
 
-              </style>
-            </head>
+          </head>
 
-            <body>
-              <div class="row">
-                <div class="col-lg-6">
-                  <h1>List</h1>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div>
-                        <select class="form-control" id="roadclass">
-                          <option value="0">Select Road Class</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div>
-                        <select class="form-control" id="routeclass">
-                          <option value="0">Select Route Class</option>
-                        </select>
-                      </div>
+          <body>
+            <div class="row">
+              <div class="col-lg-6">
+                <h1>List</h1>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div>
+                      <select class="form-control" id="roadclass">
+                        <option value="0">Select Road Class</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <table id="routestable" class="table table-bordered table-striped">
-                      </table>
+                  <div class="col-lg-6">
+                    <div>
+                      <select class="form-control" id="routeclass">
+                        <option value="0">Select Route Class</option>
+                      </select>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <h1>Map</h1>
-                  <div id="map" style="height:600px;">
-
+                <div class="row">
+                  <div class="col-lg-12">
+                    <table id="routestable" class="table table-bordered table-striped">
+                    </table>
                   </div>
                 </div>
               </div>
+              <div class="col-lg-6">
+                <h1>Map</h1>
+                <div id="map" style={{ height: "600px" }}>
 
-            </body>
-            <script src="js/roadclass.js" type="text/javascript"></script>
-            <script src="js/routeclass.js" type="text/javascript"></script>
-            <script src="js/allroutes.js" type="text/javascript"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?libraries=places,drawing,directions&key=AIzaSyBYzHYszm9XakoMlhPlhkGiRdfi4K4EVAg" type="text/javascript"></script>
-            <script src="js/index.js" type="text/javascript"></script>
+                </div>
+              </div>
+            </div>
 
-          </html>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+          </body>
+
+
+        </html>
+      </p>
+      <a
+        className="App-link"
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn React
         </a>
-      </header>
+
     </div>
   );
 }
